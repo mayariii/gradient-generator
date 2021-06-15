@@ -2,7 +2,7 @@
 // for colour inputs
 var colour1 = document.querySelector(".colour1");
 var colour2 = document.querySelector(".colour2");
-var body = document.getElementById("gradient");
+var gradientFill = document.getElementById("gradient");
 // for text output
 var css = document.querySelector(".cssTextDisplay");
 // for copy button
@@ -25,7 +25,7 @@ if (!navigator.clipboard) {
 
 // sets gradient according to colour picker inputs & updates css export text
 function setGradient() {
-	body.style.background =
+	gradientFill.style.background =
 		"linear-gradient(to " +
 		direction + "," +
 		colour1.value +
@@ -33,7 +33,7 @@ function setGradient() {
 		colour2.value +
 		")";
 
-	css.value = body.style.background + ";";
+	css.value = gradientFill.style.background + ";";
 
 	// clear styling of copy button
 	copyBtn.innerHTML = '<i class="far fa-copy copyIcon fa-lg"></i> Copy To Clipboard';
