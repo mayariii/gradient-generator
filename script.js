@@ -33,7 +33,7 @@ function setGradient() {
 		colour2.value +
 		")";
 
-	css.value = gradientFill.style.background + ";";
+	css.value = gradientFill.style.backgroundImage + ";";
 
 	// clear styling of copy button
 	copyBtn.innerHTML = '<i class="far fa-copy copyIcon fa-lg"></i> Copy To Clipboard';
