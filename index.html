@@ -3,7 +3,8 @@
 
 <head>
 	<title>Gradient Generator</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -11,19 +12,32 @@
 	<div class="site-wrapper">
 		<div class="container">
 			<h1>Gradient Generator</h1>
-			<h2>Pick your colours:</h2>
-			<div class="input-wrapper">
-				<label for="colour1" class="colour-label">Colour 1</label>
-				<input class="colour1" type="color" name="colour1" value="#9a29d6">
-				<label for="colour2" class="colour-label">Colour 2</label>
-				<input class="colour2" type="color" name="colour2" value="#1688d0">
-			</div>
-			<h2>Current Gradient</h2>
-			<div class="gradient-wrapper">
-			<input type="text" class="cssTextDisplay" readonly></input>			
-			</div>
-			<button class="copyBtn"><i class="far fa-copy copyIcon fa-lg"></i> Copy To Clipboard</button>
+			<section id="colour-input">
+				<h2>Pick your colours</h2>
+				<div class="input-wrapper">
+					<label for="colour1" class="colour-label">Colour 1</label>
+					<input class="colour1" type="color" name="colour1" value="#9a29d6">
+					<label for="colour2" class="colour-label">Colour 2</label>
+					<input class="colour2" type="color" name="colour2" value="#1688d0">
+				</div>
+			</section>
+			<section id="colour-direction">
+				<h2>Set direction</h2>
+				<div>
+					<button class="directionBtn" id="upBtn"><i class="fas fa-arrow-up"></i></button> <br>
+					<button class="directionBtn" id="leftBtn"><i class="fas fa-arrow-left"></i></button>
+					<button class="directionBtn" id="rightBtn"><i class="fas fa-arrow-right"></i></button> <br>
+					<button class="directionBtn" id="downBtn"><i class="fas fa-arrow-down"></i></button>
+				</div>
+			</section>
+			<section id="gradient-export">
+				<h2>Current Gradient</h2>
+				<div class="gradient-wrapper">
+					<input type="text" class="cssTextDisplay" readonly></input>
+				</div>
+				<button class="copyBtn"><i class="far fa-copy copyIcon fa-lg"></i> Copy To Clipboard</button>
 		</div>
+		</section>
 	</div>
 	<script type="text/javascript" src="script.js"></script>
 </body>
