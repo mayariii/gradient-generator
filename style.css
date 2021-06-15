@@ -25,7 +25,7 @@ h1 {
     color: rgba(0, 0, 0, .5);
     text-transform: uppercase;
     letter-spacing: .5em;
-
+    margin: 0;
 }
 
 h2 {
@@ -61,7 +61,6 @@ h2 {
     flex-direction: column;
 }
 
-
 .container {
     /* layout */
     display: flex;
@@ -87,7 +86,6 @@ h2 {
     /* style */
     font: 400 1.25rem 'Raleway',
         sans-serif;
-
 }
 
 .gradient-wrapper {
@@ -100,8 +98,8 @@ h2 {
 
 .copyBtn {
     /* layout */
-    margin: 1rem;
-    padding: 1rem;
+    margin: 5px;
+    padding: 5px;
 
     /* style */
     color: rgba(0, 0, 0, .5);
