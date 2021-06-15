@@ -25,13 +25,17 @@ h2 {
     margin-top: 2rem;
 }
 
-h3 {
+.cssTextDisplay {
     font: 400 1.25em 'Raleway', sans-serif;
     color: rgba(0, 0, 0, .5);
     text-align: center;
     text-transform: none;
     letter-spacing: 0.01em;
-
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 600px;
+    padding: 5px;
 }
 
 .site-wrapper{
@@ -66,4 +70,36 @@ h3 {
     background-color: white;
     border-radius: 5px;
     width: 600px;
+}
+
+.copyBtn {
+    margin: 1rem;
+    padding: 1rem;
+    color: rgba(0, 0, 0, .5);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 5px;
+    font: 400 0.8rem 'Raleway', sans-serif;
+}
+
+.copyBtn:hover {
+    background-color: white;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+.fa-copy {
+    color: rgba(0, 0, 0, .5);
+}
+
+.fa-check {
+    color: darkgreen;
+}
+
+.copied {
+    background-color: lightgreen;
+}
+
+.hidden {
+    display: none;
 }
